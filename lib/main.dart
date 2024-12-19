@@ -9,6 +9,15 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text('Chat App'),
+          backgroundColor: Colors.cyan,
+        ),
+        body:const  Text('Learning'),
+      ),
+    );
   }
 }
